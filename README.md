@@ -20,7 +20,7 @@ Here, I am going to explain how to install and use the free Better Raids plugin 
 #### The Create Action
 This action is called "Create Streamer States". You already used it in step 5. in "Get Started".
 You can add multiple streamers by splitting their names with a comma like this: Create(Name1,Name2,Name3)
-Please note **that you must not use spaces between the names. Only commas*
+Please note **that you must not use spaces between the names. Only commas**
 
 #### The Check Action
 This action is called "Check for streamers". You already used it in step 6. in "Get Started".
