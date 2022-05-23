@@ -1,0 +1,48 @@
+{
+  "sdk": 3,
+  "version": 100,
+  "name": "Better Raids",
+  "id": "BetterRaids",
+  "plugin_start_cmd": "\"%TP_PLUGIN_FOLDER%BetterRaids\\plugin.exe\"",
+  "categories": [
+    {
+      "id": "Main",
+      "name": "Better Raids",
+      "actions": [
+        {
+          "id": "CreateId",
+          "name": "Create Streamer States",
+          "prefix": "plugin",
+          "type": "communicate",
+          "tryInline": true,
+          "format": "Create {$CreateDataId$}",
+          "data": [
+            {
+              "id": "CreateDataId",
+              "type": "text",
+              "label": "text",
+              "default": "StreamerName"
+            }
+          ]
+        },
+        {
+          "id": "StreamersActionId",
+          "name": "Check for streamers",
+          "prefix": "plugin",
+          "type": "communicate",
+          "tryInline": true,
+          "format": "Check {$StreamersDataId$}",
+          "data": [
+            {
+              "id": "StreamersDataId",
+              "type": "text",
+              "label": "text",
+              "default": "StreamerName"
+            }
+          ]
+        }
+      ],
+      "states": []
+    }
+  ]
+}
