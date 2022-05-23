@@ -25,3 +25,7 @@ Please note **that you must not use spaces between the names. Only commas*
 This action is called "Check for streamers". You already used it in step 6. in "Get Started".
 You can add multiple streamers by splitting their names with a comma like this: Refresh(Name1,Name2,Name3)
 Please note **that you must not use spaces between the names. Only commas**
+  
+## Contact
+If you have a problem or a question, contact me on Discord.
+**Levithan#3125**
