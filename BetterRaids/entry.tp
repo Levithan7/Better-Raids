@@ -1,0 +1,54 @@
+{
+  "sdk": 3,
+  "version": 100,
+  "name": "Better Raids",
+  "id": "BetterRaids",
+  "plugin_start_cmd": "\"%TP_PLUGIN_FOLDER%BetterRaids\\plugin.exe\"",
+  "categories": [
+    {
+      "id": "Main",
+      "name": "Better Raids",
+      "actions": [
+        {
+          "id": "StreamersActionId",
+          "name": "Check for streamers",
+          "prefix": "plugin",
+          "type": "communicate",
+          "tryInline": true,
+          "format": "Check {$StreamersDataId$}",
+          "data": [
+            {
+              "id": "StreamersDataId",
+              "type": "text",
+              "label": "text",
+              "default": "Streamer1,Streamer2"
+            }
+          ]
+        },
+        {
+          "id": "NextStreamerActionId",
+          "name": "Refresh the current streamer",
+          "prefix": "plugin",
+          "type": "communicate",
+          "tryInline": true,
+          "format": "Refresh",
+          "data": []
+        }
+      ],
+      "states": [
+        {
+          "id": "CurrentStreamerId",
+          "type": "text",
+          "label": "text",
+          "default": "NoName"
+        },
+        {
+          "id": "CurrentStreamerStateId",
+          "type": "text",
+          "label": "text",
+          "default": "NoState"
+        }
+      ]
+    }
+  ]
+}
